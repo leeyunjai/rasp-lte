@@ -21,4 +21,4 @@ else
   qmicli -p -d /dev/cdc-wdm0 --device-open-net='net-raw-ip|net-no-qos-header' --wds-start-network="apn='lte.ktfwing.com',username='YOUR_USERNAME',password='YOUR_PASSWORD',ip-type=4" --client-no-release-cid --silent
 fi
 
-udhcpc -i ${iface}
+udhcpc -i ${iface} -n
